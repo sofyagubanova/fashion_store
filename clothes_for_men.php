@@ -25,7 +25,10 @@
                      for ($i=0; $i<count($productarticles); $i++)
                      {
                      	echo '<div id="product">
-			     <p  style="font-size:28px;color:#003841; padding:15px;"><img align="left" src="products/',$productimgs[$i],'" alt="',$productnames[$i],'"/>',$productnames[$i],'<br><p align="left" style="margin-top:20px;text-align:justify;">Артикул: ',$productarticles[$i], '<br>' , $productdescs[$i], '</p></p>
+			     <p  style="font-size:28px;color:#003841; padding:15px;">
+			     <img align="left" src="products/',$productimgs[$i],'" alt="',$productnames[$i],'"/>'
+				,$productnames[$i],'<br><p align="left" style="margin-top:20px;text-align:justify;">
+				Артикул: ',$productarticles[$i], '<br>' , $productdescs[$i], '</p></p>
 			     <p align="center" style="font-size:24px;color:#003841;margin-top:50px;">Цена: ',$productprices[$i],'руб.</p>';
                   
                      if (isset($_SESSION['login']) && isset($_SESSION['adminmode'])) 
